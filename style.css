@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+.pokemon-container {
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  background-image: url(pokemon.jpg);
+}
+
+#pokemonSearch {
+  width: 15%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.title {
+  font: 40px "sigmar one";
+}
+
+.pokemonName {
+  font: 25px "sigmar one";
+}
+
+#typeList1 {
+  width: 10%;
+  height: 10%;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

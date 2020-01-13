@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokemon API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="pokemon-container">
+      <h1 class="title">Pokemon Searcher</h1>
+      <div class="main-info">
+        <h1 class="pokemonName"></h1>
+        <img class="spriteImage" />
+        <img class="bSpriteImage" />
+        <div class="type-container">
+          <img id="typeList1" src="images/pokeball.png" />
+          <img id="typeList2" />
+        </div>
+      </div>
+      <form onsubmit="return false;">
+        <input
+          type="text"
+          placeholder="Enter Pokemon Name Or ID"
+          id="pokemonSearch"
+          onkeypress="enterFunction(event)"
+        />
+        <!--<button type="button" onclick="getPokemonName()" id="searchButton">
+          Submit
+        </button>-->
+      </form>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
