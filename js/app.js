@@ -21,6 +21,10 @@ function display(url) {
     checkType(typeList);
 
     $("#pokemonSearch").val(""); // resets the input search value to "" after submit
+    $(".feedback").html(""); // resets the feedback to "" after successful submit
+  }).fail(function() {
+    // catch invalid input in pokemonSearch
+    $(".feedback").html(url + " does not exist. Please try searching again!");
   });
 }
 

@@ -18,7 +18,8 @@ body {
   font: 40px "sigmar one";
 }
 
-.pokemonName {
+.pokemonName,
+.feedback {
   font: 25px "sigmar one";
 }
 
